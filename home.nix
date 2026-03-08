@@ -12,11 +12,9 @@
     bat
     kitty
     rofi
-    waypaper
     wallust
     waybar
     telegram-desktop
-    grim
     hyprshot
   ];
   services.swaync.enable = true;
