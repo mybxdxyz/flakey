@@ -14,6 +14,7 @@
     rofi
     wallust
     waybar
+    waypaper
     telegram-desktop
     hyprshot
   ];
