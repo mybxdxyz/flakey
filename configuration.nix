@@ -17,6 +17,13 @@
     efi.canTouchEfiVariables = true;
   };
 
+  zramSwap = {
+      enable = true;
+      priority = 50;
+      algorithm = "lz4";
+      memoryPercent = 50;
+    };
+
   # Nvidia not working on 6.19 yet
   boot.kernelPackages = pkgs.linuxPackages_6_18;
 
