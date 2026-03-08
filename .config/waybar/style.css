@@ -1,0 +1,89 @@
+@import '/home/nexus/.cache/wallust/waybar/colors-waybar.css';
+
+/* global reset + font */
+* {
+  border: none;
+  font-family: "CaskaydiaCove Nerd Font Propo";
+  font-size: 13px;
+}
+
+/* main bar */
+window#waybar {
+  background: transparent;
+  color: @foreground;
+}
+
+/* floating pill */
+#pill {
+  /* use background with a bit of transparency */
+  background: rgb(30,30,46);
+  border-radius: 22px;
+  padding: 6px 18px;
+}
+
+/* spacing for modules */
+#clock,
+#network,
+#battery,
+#workspaces {
+  padding: 0 10px;
+}
+
+/* workspaces buttons */
+#workspaces button {
+  padding: 0 8px;
+  margin: 0 3px;
+  border-radius: 36px;
+  background-color: rgb(30,30,46);   /* dark base for inactive */
+  color: @color4;
+  min-width: 48px;
+  transition: all 0.25s ease;
+}
+
+#workspaces button:hover {
+  background-color: @color4;
+  color: @foreground;
+  text-shadow: 0px 0px 8px @color4;
+  transition: all 0.25s ease;
+}
+
+/* clock module */
+#clock {
+    color: @color6;
+    background: transparent;
+    padding: 0 8px;
+    border-radius: 4px;
+}
+
+.tooltip {
+    color: @foreground;
+    background: rgb(30,30,46);
+}
+
+/* network module */
+#network {
+  color: @color4; /* use pywal color4 */
+}
+
+/* battery module */
+#battery {
+  color: @color2; /* use pywal color2 */
+}
+
+/* Make the notification module look like a pill with Pywal colors */
+window#waybar #custom-notification {
+  background: rgb(30,30,46);      
+  color: @foreground;           
+  border: 2px solid rgb(30,30,46);
+  border-radius: 18px;
+  padding: 4px 10px;
+  margin-left: 8px;
+  transition: all 0.25s ease;
+}
+
+/* Optional: change color on hover */
+window#waybar #custom-notification:hover {
+  background: @color4;
+  color: rgb(30,30,46);
+  transition: all 0.25s ease;
+}

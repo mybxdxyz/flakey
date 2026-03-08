@@ -1,0 +1,84 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "margin-top": 10,
+  "margin-left": 12,
+  "margin-right": 12,
+
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+    "group/pill"
+  ],
+
+  "group/pill": {
+    "orientation": "inherit",
+    "modules": [
+      "custom/separator",
+      "clock",
+      "custom/separator",
+      "network",
+      "battery"
+    ]
+  },
+
+  "modules-right": [
+    "tray",
+    "custom/notification"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "●",
+      "default": "○"
+    }
+  },
+
+  "custom/separator": {
+    "format": " "
+  },
+
+  "clock": {
+  "format": "{:%H:%M} ",
+  "format-alt": "{:%A, %B %d, %Y (%R)} ",
+  "tooltip-format": "<small>{calendar}</small>"
+  }, 
+
+  "network": {
+    "format-wifi": "",
+    "format-disconnected": "󰖪",
+    "tooltip-format": "{essid} ({signalStrength}%) ",
+    "format-disconnected": "󰖪",
+    "tooltip-format-disconnected": "N0 C0NN3CT1N!"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["","","","",""]
+  },
+
+    "custom/notification": {
+    "tooltip": true,
+    "format": "<span size='16pt'>{icon}</span>",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "󰪓",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  }
+}

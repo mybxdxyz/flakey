@@ -1,0 +1,35 @@
+# vim:fileencoding=utf-8:foldmethod=marker
+
+background_opacity 0.8
+cursor_trail 200
+# font_family      family="CaskaydiaCove Nerd Font"
+font_size	 12
+# bold_font        auto
+# italic_font      auto
+# bold_italic_font auto
+
+enable_audio_bell no
+
+shell zsh
+shell_intergration enabled
+
+remember_window_size no
+scrollbar_handle_opacity 0
+scrollbar_track_opacity 0
+scrollbar_track_hover_opacity 0
+
+confirm_os_window_close 0
+sync_to_monitor no
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="CaskaydiaCove Nerd Font Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
+
+# BEGIN_KITTY_THEME
+# Rosé Pine
+include current-theme.conf
+# END_KITTY_THEME

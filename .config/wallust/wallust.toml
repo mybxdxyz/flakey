@@ -1,0 +1,9 @@
+# wallust v3.4
+backend = "fastresize"
+color_space = "lch"
+palette = "dark"
+#check_contrast = true
+#alpha = 100
+[templates]
+waybar = { template = "colors-waybar.css", target = "~/.cache/wallust/waybar/colors-waybar.css" }
+kitty   = { template = "colors-kitty.conf", target = "~/.cache/wallust/kitty/colors-kitty.conf" }
