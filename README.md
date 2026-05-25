@@ -1,3 +1,3 @@
 # flakey
-### How do i write Readme's...
-<![well](./asset/screen.png) 
+---
+Abandoned nixos config, poorly made and laggy on my hardware.
